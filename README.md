@@ -1,46 +1,76 @@
-# Getting Started with Create React App
+Project
+-------
+task-dashboard is a react typescript application styled with tailwind css.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Features
+--------
+Built using React with TypeScript for robust and type-safe development.
+Styled with Tailwind CSS for a highly customizable design system.
+Deployed using Vercel for seamless hosting.
 
-## Available Scripts
+Demo
+-----
+Check out the live application here: `https://task-dashboard-cyan.vercel.app/`
 
-In the project directory, you can run:
+Prerequisites
+-------------
+Before running this project, ensure you have the following installed on your machine:
 
-### `npm start`
+Node.js (>= 14)
+npm or yarn
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Getting Started
+---------------
+Follow these steps to run the project locally:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. Clone the repository -
+    git clone `https://github.com/sreelakshmi367/Task-Dashboard.git`
+    cd Task-Dashboard
 
-### `npm test`
+2. Install dependencies-
+    npm install
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Run the development server-
+    npm start
+    The development server will be available at `http://localhost:3000`.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Scripts
+-------
+Here are the scripts available in the project:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+npm start / yarn start - Runs the app in development mode.
+npm build / yarn build - Builds the app for production.
+npm test / yarn test - Launches the test runner.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Tech Stack
+-----------
+React: For building user interfaces.
+TypeScript: Ensures type safety and better developer experience.
+Tailwind CSS: Provides utility-first styling.
+Vercel: Hosts the deployed application.
 
-### `npm run eject`
+Architecture Overview
+---------------------
+1. Frontend Framework
+    React(typescript) is used for building the ui.
+    Functional components with hooks for managing state and side effects.
+    Project is component-based for scalability and reusability.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+ 2. State Management
+    Local component state is used for lightweight operations like modals and form inputs.
+    Local storage is used as persistant storage for tasks to retain data across sessions.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+ 3. Drag-and-Drop
+    Utilizes @dnd-kit for modern, flexible drag-and-drop interactions.
+    Dragging a task across columns updates its status.
+    Sortable and accessible drag behaviour.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+ 4. Core Features
+    Task creation via a modal with fields for title,description,due date and status.
+    Due date validation ensures tasks cannot be created with past dates.
+    Snackbar notifications for user feedback.
+    Status based filtering and due date sorting for task management.
+    User authentication(basic)
+    
+             
